@@ -1,0 +1,12 @@
+services:
+  s2-admin:
+    image: dpage/pgadmin4
+    container_name: 68-s2-admin
+    ports:
+      - ${PGADMIN_PORT1}:80
+      - ${PGADMIN_PORT2}:443
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+
+    
