@@ -17,4 +17,5 @@ cp env.example .env
 
 ```sh
 docker compose -f db.yaml up -d
-```
+docker compose -f admin.yaml up -d
+docker compose -f app.yaml up -d
